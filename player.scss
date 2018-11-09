@@ -1,0 +1,93 @@
+.player {
+	width: 640px;
+	height: 360px;
+	position: relative;
+	white-space: normal;
+	// &:before {
+	// 	content: "";
+	// 	background-image: linear-gradient(to bottom, #000000, rgba(111, 111, 111, 0) 50%, #000000);
+	// 	position: absolute;
+	// 	top: 0;
+	// 	left: 0;
+	// 	opacity: 0;
+	// }
+	.main-player {
+		.video-wrapper {
+			position: relative;
+			width: 100%;
+			height: 0 !important;
+			padding-bottom: 56.25%;
+			#video {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+			}
+		}
+	}
+	.vjs-big-play-button {
+		border: 0 !important;
+		&:before {
+			font-size: 0 !important;
+			border-radius: 100%;
+			background-size: 100% 100%;
+			background-color: red;
+			width: 96px !important;
+			height: 96px !important;
+			opacity: 1 !important;
+			background-image: url('img/icon-player.png') !important;
+		}
+	}
+	.vjs-big-play-button{
+		width: 0 !important;
+		height: 0 !important;
+		background-color: none !important;
+	}
+	.vjs-current-time-display {
+		font-size: 1.2em !important;
+	}
+	.vjs-time-divider {
+		margin: 0 4px !important;
+		font-size: 1.2em !important;
+		line-height: 2.5em !important;
+	}
+	.vjs-control-bar {
+		background-color: transparent !important;
+	}
+	.vjs-duration-display {
+		font-size: 1.2em !important;
+	}
+	.vjs-default-skin {
+		color: #fff !important;
+	}
+	.vjs-play-control {
+		width: 30px !important;
+	}
+	.vjs-default-skin .vjs-time-controls{
+		width: 30px !important;
+	}
+	.vjs-default-skin .vjs-control {
+		&:before {
+			font-size: 1.8em !important;
+			line-height: 1.67 !important;
+		}
+	}
+	.icon-play {
+		width: 96px;
+		height: 96px;
+		border-radius: 100%;
+		background-size: 100% 100%;
+		display: inline-block;
+		position: absolute;
+		background-size: cover;
+		background-position: center;
+		overflow: hidden;
+		top: 50%;
+		left: 50%;
+		// margin-top: 140px;
+		transform: translate(-50%, -50%);
+		// margin-top: 368px;
+		background-image: url('img/icon-player.png');
+	}
+}
